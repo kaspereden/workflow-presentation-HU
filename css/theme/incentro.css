@@ -33,9 +33,13 @@ input {
   padding-left: 5px; }
 
 ::selection {
-  color: #F58233;
+  color: #f58233;
   background: #134674;
   text-shadow: none; }
+
+.reveal em, input em {
+  color: #f58233;
+  font-style: normal; }
 
 /*********************************************
  * HEADERS
@@ -64,7 +68,7 @@ input h6 {
  * LINKS
  *********************************************/
 .reveal a:not(.image), input a:not(.image) {
-  color: #F58233;
+  color: #f58233;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -73,7 +77,7 @@ input h6 {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover, input a:not(.image):hover {
-  color: #F58233;
+  color: #f58233;
   text-shadow: none;
   border: none; }
 
@@ -85,8 +89,7 @@ input h6 {
  * IMAGES
  *********************************************/
 .reveal section img, input section img {
-  margin: 15px 0px;
-  max-width: 45%; }
+  margin: 15px 0px; }
 
 .reveal a:hover img, input a:hover img {
   background: rgba(255, 255, 255, 0.2);
@@ -156,7 +159,7 @@ input .controls div.navigate-down.enabled {
   color: #939393; }
 
 .reveal a.wof:hover i, input a.wof:hover i {
-  color: #F58233; }
+  color: #f58233; }
 
 .reveal .slides, input .slides {
   zoom: 1.0 !important; }

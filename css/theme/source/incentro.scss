@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+
+$orange: #F58233;
 /**
  * Incentro theme for reveal.js.
  *
@@ -37,9 +39,14 @@ input {
     padding-left:5px;
 }
 ::selection {
-  color: #F58233;
+  color: $orange;
   background: #134674;
   text-shadow: none; }
+
+.reveal em{
+    color:$orange;
+    font-style: normal;
+}
 
 /*********************************************
  * HEADERS
@@ -63,7 +70,7 @@ input {
  * LINKS
  *********************************************/
 .reveal a:not(.image) {
-  color: #F58233;
+  color: $orange;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -72,7 +79,7 @@ input {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover {
-  color: #F58233;
+  color: $orange;
   text-shadow: none;
   border: none; }
 
@@ -85,7 +92,7 @@ input {
  *********************************************/
 .reveal section img {
   margin: 15px 0px;
-  max-width: 45%;
+
 }
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
@@ -153,7 +160,7 @@ input {
 }
 
 .reveal a.wof:hover i {
-    color: #F58233;
+    color: $orange;
 }
 
 .reveal .slides {
