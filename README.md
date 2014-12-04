@@ -2,7 +2,7 @@
 
 Presentation with reveal.js about workflows and front-end
 
-<hr>
+----
 
 # reveal.js
 
