@@ -163,3 +163,12 @@ input .controls div.navigate-down.enabled {
 
 .reveal .slides, input .slides {
   zoom: 1.0 !important; }
+
+.reveal #features li, input #features li {
+  display: inline-block; }
+.reveal #features li:after, input #features li:after {
+  content: ", "; }
+.reveal .feature-missed, input .feature-missed {
+  color: red; }
+.reveal #features li.feature-invisible, input #features li.feature-invisible {
+  display: none; }

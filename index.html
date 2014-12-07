@@ -119,6 +119,97 @@
 				<section>
 					<h2>so where are we now?</h2>
 				</section>
+				<section id="ex-now">
+					<input type="text" name="now" value="" id="e-input"><input type="button" name="solve" value="solve" id="e-solve">
+					<script charset="utf-8" type="text/javascript">
+						(function () {
+							'use strict';
+							var scope = document.getElementById('ex-now');
+							var input = document.getElementById('e-input');
+							var solve = document.getElementById('e-solve');
+
+							input.onchange = function () {
+								var t = document.getElementById('feat-' + this.value);
+								if (t) {
+									t.classList.remove('feature-invisible');
+								}
+							};
+
+							solve.onclick = function () {
+								var list = document.getElementById('features');
+								var hidden = list.getElementsByClassName('feature-invisible');
+								for (var i = hidden.length-1; i >= 0; i=i-1) {
+									var elem = hidden[i];
+									if (elem && elem.classList) {
+										elem.classList.add('feature-missed');
+										elem.classList.remove('feature-invisible');
+										console.log(elem.textContent);
+									}
+								}
+							};
+						}());
+					</script>
+					<hr>
+					<ul id="features">
+						<li class="feature-invisible" id="feat-accessibility">
+							accessibility
+						</li>
+						<li class="feature-invisible" id="feat-adaptive">
+							adaptive
+						</li>
+						<li class="feature-invisible" id="feat-analytics">
+							analytics
+						</li>
+						<li class="feature-invisible" id="feat-buildprocess">
+							build process
+						</li>
+						<li class="feature-invisible" id="feat-conversion">
+							conversion
+						</li>
+						<li class="feature-invisible" id="feat-design">
+							design
+						</li>
+						<li class="feature-invisible" id="feat-different-browsers">
+							different browsers
+						</li>
+						<li class="feature-invisible" id="feat-pre-processors">
+							pre-processors
+						</li>
+						<li class="feature-invisible" id="feat-responsive">
+							responsive
+						</li>
+						<li class="feature-invisible" id="feat-sea">
+							sea
+						</li>
+						<li class="feature-invisible" id="feat-seo">
+							seo
+						</li>
+						<li class="feature-invisible" id="feat-speed">
+							speed
+						</li>
+						<li class="feature-invisible" id="feat-smartphones">
+							smartphones
+						</li>
+						<li class="feature-invisible" id="feat-smartwatches">
+							smartwatches
+						</li>
+						<li class="feature-invisible" id="feat-technology">
+							technology
+						</li>
+						<li class="feature-invisible" id="feat-testability">
+							testability
+						</li>
+						<li class="feature-invisible" id="feat-tracking">
+							tracking
+						</li>
+						<li class="feature-invisible" id="feat-user-experience">
+							user experience
+						</li>
+						<li class="feature-invisible" id="feat-and-so-on">
+							and so on...
+						</li>
+					</ul>
+				</section>
 			</section>
 			<section id="workflow">
 				<section>
@@ -128,6 +219,10 @@
 			<section id="you">
 				<section>
 					<h2>exercise</h2>
+				</section>
+
+				<section>
+					<h4><a target="_blank" href="http://jsbin.com/?js,console">http://jsbin.com/?js,console</a></h4>
 				</section>
 			</section>
 		</div>

@@ -166,3 +166,19 @@ input {
 .reveal .slides {
     zoom: 1.0 !important;
 }
+
+.reveal {
+    #features li {
+        display: inline-block;
+    }
+    #features li:after {
+        content: ", ";
+    }
+    .feature-missed {
+        color: red;
+    }
+    .feature-visible {}
+    #features li.feature-invisible {
+        display: none;
+    }
+}
