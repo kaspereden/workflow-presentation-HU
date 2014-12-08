@@ -132,6 +132,7 @@
 								var t = document.getElementById('feat-' + this.value);
 								if (t) {
 									t.classList.remove('feature-invisible');
+									this.value = '';
 								}
 							};
 
@@ -143,7 +144,6 @@
 									if (elem && elem.classList) {
 										elem.classList.add('feature-missed');
 										elem.classList.remove('feature-invisible');
-										console.log(elem.textContent);
 									}
 								}
 							};
