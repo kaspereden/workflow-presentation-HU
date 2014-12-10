@@ -7,20 +7,16 @@ Given by Rob van der Burgt and Kasper Reijnders
 
 -	Incentro
 
-> #worldofincentro
+> &#35;worldofincentro
 
 ---
 
 Run the presentation local
 --------------------------
 
-1.	Install dependencies`sh
-	$ npm install
-	`
+1.	Install dependencies `$ npm install`
 
-2.	Serve the presentation and monitor source files for changes`sh
-	$ grunt serve
-	`
+2.	Serve the presentation and monitor source files for changes `$ grunt serve`
 
 3.	Open http://localhost:8000 to view your presentation
 
