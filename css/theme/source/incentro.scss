@@ -182,3 +182,43 @@ input {
         display: none;
     }
 }
+
+
+.diaWrapper {
+  position: relative;
+}
+
+.diaWrapper:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 14%;
+  background: white;
+  width: 100%;
+}
+
+.diaWrapper.striptop {
+  margin-top: -10%;
+}
+
+.diaWrapper.striptop:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 27%;
+  background: white;
+  width: 100%;
+}
+
+
+.dia {
+  width: 100%;
+}
+
+.reveal .column-split {
+  float: left;
+  width: 50%;
+  margin: 0;
+}

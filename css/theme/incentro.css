@@ -33,12 +33,12 @@ input {
   padding-left: 5px; }
 
 ::selection {
-  color: #f58233;
+  color: #F58233;
   background: #134674;
   text-shadow: none; }
 
 .reveal em, input em {
-  color: #f58233;
+  color: #F58233;
   font-style: normal; }
 
 /*********************************************
@@ -68,7 +68,7 @@ input h6 {
  * LINKS
  *********************************************/
 .reveal a:not(.image), input a:not(.image) {
-  color: #f58233;
+  color: #F58233;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
@@ -77,7 +77,7 @@ input h6 {
   transition: color .15s ease; }
 
 .reveal a:not(.image):hover, input a:not(.image):hover {
-  color: #f58233;
+  color: #F58233;
   text-shadow: none;
   border: none; }
 
@@ -159,7 +159,7 @@ input .controls div.navigate-down.enabled {
   color: #939393; }
 
 .reveal a.wof:hover i, input a.wof:hover i {
-  color: #f58233; }
+  color: #F58233; }
 
 .reveal .slides, input .slides {
   zoom: 1.0 !important; }
@@ -173,10 +173,8 @@ input .controls div.navigate-down.enabled {
 .reveal #features li.feature-invisible, input #features li.feature-invisible {
   display: none; }
 
-
 .diaWrapper {
-  position: relative;
-}
+  position: relative; }
 
 .diaWrapper:after {
   content: '';
@@ -185,12 +183,10 @@ input .controls div.navigate-down.enabled {
   bottom: 0;
   height: 14%;
   background: white;
-  width: 100%;
-}
+  width: 100%; }
 
 .diaWrapper.striptop {
-  margin-top: -10%;
-}
+  margin-top: -10%; }
 
 .diaWrapper.striptop:before {
   content: '';
@@ -199,16 +195,14 @@ input .controls div.navigate-down.enabled {
   top: 0;
   height: 27%;
   background: white;
-  width: 100%;
-}
-
+  width: 100%; }
 
 .dia {
-  width: 100%;
-}
+  width: 100%; }
 
-.reveal .column-split {
+.reveal .column-split, input .column-split {
   float: left;
   width: 50%;
-  margin: 0;
-}
+  margin: 0; }
+
+/*# sourceMappingURL=incentro.css.map */
