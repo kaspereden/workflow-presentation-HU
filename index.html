@@ -264,6 +264,7 @@
 					<ul class="fragment">
 						<li>SCSS</li>
 						<li>Less</li>
+						<li>Autprefixer</li>
 						<li>..</li>
 					</ul>
 				</section>
@@ -488,22 +489,31 @@
 
 				<section data-markdown>
 					<script charset="utf-8">
-					<h2>install node.js</h2>
-					<ol>
-						<li class="fragment">get a computer</li>
-						<li class="fragment">go to nodejs.org</li>
-						<li class="fragment">download nodejs</li>
-						<li class="fragment">install nodejs</li>
-						<li class="fragment">try
-						```
-						$ node --version
-						``` or
-						```
-						$ npm --version
-						```
-						</li>
-						<li class="fragment">when a version number shows up you are done</li>
-					</ol>
+						<h2>install node.js</h2>
+
+						<ol class="column-split fragment">
+							<li><strong>Windows</strong></li>
+							<li>go to nodejs.org</li>
+							<li>download nodejs</li>
+							<li>install nodejs</li>
+						</ol>
+
+						<ol class="column-split fragment">
+							<li><strong>Mac OSX</strong></li>
+							<li>install homebrew <a href="http://brew.sh/" target="blank">http://brew.sh/</a></li>
+							<li>run ```brew install node ```</li>
+						</ol>
+
+						<p class="fragment" style="clear: both; padding-top: 1em; text-align: left;">
+							try
+							``` $ node --version ```
+							or
+							``` $ npm --version```
+						</p>
+
+						<p class="fragment" style="clear: both; padding-top: 1em; text-align: left;">
+							when a version number shows up you are done
+						</p>
 					</script>
 				</section>
 
@@ -526,7 +536,10 @@
 						<li class="fragment">create src dir</li>
 						<li class="fragment">add css</li>
 						<li class="fragment">install gulp autoprefixer</li>
-						<li class="fragment">configure autoprefixer task in gulp</li>
+						<li class="fragment">
+							configure autoprefixer task in gulp<br />
+							<span style="font-size: .7em;">( remember where the build result should be? )</span>
+						</li>
 						<li class="fragment">run gulp</li>
 					</ol>
 				</section>
