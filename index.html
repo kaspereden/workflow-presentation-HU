@@ -506,11 +506,6 @@
 					</div>
 				</section>
 				<section>
-					<div class="diaWrapper striptop">
-						<img src="images/dia/Dia50.jpg" class="dia" alt=""/>
-					</div>
-				</section>
-				<section>
 					<div class="diaWrapper">
 						<img src="images/dia/Dia51.jpg" class="dia" alt=""/>
 					</div>
@@ -545,7 +540,7 @@
 					<ol>
 						<li class="fragment">create src dir</li>
 						<li class="fragment">add css</li>
-						<li class="fragment">install gulp autoprefixer</li>
+						<li class="fragment">install gulp-autoprefixer</li>
 						<li class="fragment">
 							configure autoprefixer task in gulp<br />
 							<span style="font-size: .7em;">( remember where the build result should be? )</span>
@@ -553,6 +548,47 @@
 						<li class="fragment">run gulp</li>
 					</ol>
 				</section>
+
+
+
+				<section >
+					<h2>configure css minifier</h2>
+					<ol>
+						<li class="fragment">install gulp-minify-css</li>
+						<li class="fragment">
+							configure minify css task in gulp<br />
+							<span style="font-size: .7em;">( add to existing css pipe )</span>
+						</li>
+						<li class="fragment">run gulp</li>
+					</ol>
+				</section>
+
+
+				<section>
+					<div class="diaWrapper striptop">
+						<img src="images/dia/Dia50.jpg" class="dia" alt=""/>
+					</div>
+				</section>
+
+
+
+				<section >
+					<h2>configure watch, browsersync & html task</h2>
+					<ol>
+						<li class="fragment">
+							create task to copy html from source to build directory
+						</li>
+						<li class="fragment">
+							create watch task wich starts browsersync and automatically executes tasks
+						</li>
+						<li class="fragment">
+							install browsersync, serve files from build directory
+						</li>
+						<li class="fragment">run gulp</li>
+					</ol>
+				</section>
+
+
 
 				<section>
 					<h4><a target="_blank" href="http://jsbin.com/?js,console">http://jsbin.com/?js,console</a></h4>
